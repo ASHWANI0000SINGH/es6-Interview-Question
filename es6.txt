@@ -1,0 +1,92 @@
+Ecma script official client side scripting 
+js is scripting language ecma scripot is the standard for js
+
+1.constatnts
+2.arrow fundtions
+3.Object literals
+4.map/set
+5.Promise is es6
+6.Default parameter
+7.Rest and spread opeartor
+8.Objects modules,classes,iterators,
+generators,destructuring assignemnt
+
+Q1. what is babel>
+js transpiler , allow us to write es6 code and 
+convert back in pre-es6 js that browder support
+
+Q2.What is weakSet?
+>Weak set lets you store weakely held obj in collection
+
+Q3.what is pop method used 
+>pop method is used to remove the last element from the array
+
+Q4.to export sibgle value
+>By using export default
+
+Q5.Iteratorss in es6?
+>
+
+Q6. Es6 class?
+>constructore and use of this 
+
+Q7. Spread Operator
+Q8. Map feature
+Q9.Array.flat
+>Flat maethod contenate arll sub array elemt into new array
+
+Q10. String.trimStart() & String.trimEnd()
+Q11. Tempelate literal
+>using`` (bactick)
+
+Q12 Find and find index?
+Q13 Arrow function in details?
+>
+1.when we use arrow funtion it does not have 
+this it uses the parent this i.e window object
+2.but when we use normal function we
+ need to use this to bind the becuase it uses have own this
+
+Q14. what is classes
+>ecma script 6 
+>classes are the blue print of items
+CONSTRUCTOR IS SPEACIAL METHOD FOR creating and initilaizing obj
+they are auto called when class instance is created
+	
+Q15. inhertance and constructir and super keyword?
+>inheritance is basically accessing parent property from child class
+we need to user extend the child class to parent class 
+we need to use super key word in constructor to access the functuon
+
+Q16 . Lexial scope for this?
+>lexical scope is the scope where the variable has scope 
+or we can use arrow function as it uses parent this
+
+Q17. rest parameter
+>Indefinite no of parameter and it hold into the array
+
+Q18. Promise 
+>promise in es6 
+its a way when api calls are made it delasys for some Time
+so we need to wait for api to fetch data from server
+that is y we need to use promise 
+and we also need to use .then and res to get data
+
+
+Q19. Destructuring Array?
+>unpacking array into variables
+we can also use rest parameter to get the
+ reaminig items using rest operator
+
+Q20. Destructure in objects?
+> Thet are unpacked based on keys 
+
+Q21. Spread Operator
+> spread operator used in arguments
+rest opeartor is used in parameter
+
+Q22. Module
+>Es6 
+ one file code need to use in dirrent file
+use export and import to use
+

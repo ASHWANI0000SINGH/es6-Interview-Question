@@ -1,0 +1,56 @@
+question and ans
+1. JS is dynamic langusage?
+> Data types of variable can change during run time.
+2.how js determine data type
+> by value
+3. Different type of data type
+>string, number,bigInt,boolean,undefined,null,symbol
+>Object
+4. Explained undefined ind data type
+> value is not initilaized
+5.explain null and undefined
+>null is absence of data while undefined is not initilized 
+6. Hoisting(var)
+>Hositing is a mechanism where variable declaration movee top of the scope before the code execute 
+7.Explain global variable;
+>Which is aceesible everwhere.
+8. What happens when u declare var without var
+>It becomes global variable
+9. use strict
+> It checs wethere vaiable us assigned with var , let or const
+10.What are closures
+>Closures gives access to an outer function scope from inner function.
+ in closure we can also return the function 
+but iy will still remeber the refrence of outer scope of the variable
+11. IIFE
+>Imeediately invoked fundtion
+anonymous function gets invoked immediately 
+12.Inheritance in javascript?
+>inhertance enable us to define a class and takes all the
+ functionlity of the parent method/properties 
+13. What is prototyoe in js?
+>Prototypes are the mechanism by which
+ JavaScript objects inherit features from one another 
+
+14. Explain Prototype chaining?
+>Prototype chining is the process where the property/method
+is first checked in current obj
+then it goes to the protype obj
+the protypes protype objct, untill the prototype object uis null
+
+15. let variable
+>block scope
+let hositing happens 
+but it doesnot assign any value , refernce err
+cant access x its not initilaized
+
+16.Temeral dead zone
+state of variable is there in menory but it doesnot have value
+
+17. let vs var
+> scoping -var function scope
+scoping let immediate enclosing block scope
+initilaization- variable declartion top
+hoisting var and let both
+var -initialized undefined
+let -will not be initalized by any value (exception)
