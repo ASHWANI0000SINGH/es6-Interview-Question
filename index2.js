@@ -2,6 +2,7 @@
 //     constructor(name,age){
 //         this.name=name,
 //         this.age=age
+//         console.log("called");
 //     }
 //     getData(){
 //         console.log(this.name+ this.age)
@@ -15,7 +16,7 @@
 
 // var a=[1,2,3];
 // var b=[4,5,...a,6];
-// // console.log(b)
+// console.log(b)
 
 // a.map((item,i)=>{
 //     console.log(item,i)
@@ -98,9 +99,9 @@
 //     }
 // }
 // let fruit1= new Fruits();
+// let fruitdry= new Dryfruits();
 // fruit1.getFruitName();
 // fruit1.getDryFruit();
-// let fruitdry= new Dryfruits();
 
 // inheritance is basically accessing parent property from child class
 // we need to user extend the child class to parent class 
@@ -130,8 +131,8 @@
 
 // rest operat
 
-// function fruits(a,b,c,...d){
-//     console.log(a,b,c,d)
+// function fruits(...a){
+//     console.log(a)
 // }
 // fruits("apple","mango","kiwi","bananna","grapes","watermelob");
 
@@ -187,3 +188,55 @@
 //     console.log(a,b,c);
 // }
 // fun(...fruits)
+
+// Strings methods
+
+// let course="js is cool";
+// console.log(course.slice(0,8))
+// console.log(course.splice(0,8))
+
+// const xyz=[1,2,3,4,5,6]
+// console.log(xyz);
+// const xyz2=xyz.slice(0,2);
+// console.log(xyz2);
+// console.log(xyz.slice(0,2));
+// console.log(xyz);
+
+
+// splice alters old array 
+// const xyz1=[1,2,3,4,5,6]
+// console.log(xyz1);
+// const spliceArr=xyz1.splice(0,7);
+// console.log(spliceArr);
+// console.log(xyz1.splice(0,2));
+// console.log(xyz1);
+
+// const arr=["a","s","h"];
+// console.log(arr.slice(2,6))
+
+const arr= [1,2,3,4,5];
+//  arr.forEach((item)=>{
+//     console.log(item)
+// })
+
+// console.log(arr.includes(1));
+// arr.filter((item)=>console.log(item>3));
+// const filtered=arr.filter((item)=>item>3);
+// console.log(filtered);
+
+// const mapArr=arr.map((item)=>item+2);
+// console.log(mapArr);
+// console.log(arr);
+
+const reduceArr=arr.reduce(((tot,val)=>tot+val),0)
+console.log(reduceArr)
+// const sortArr=arr.sort((a,b)=>a>b?-1:1)
+// const sortArr1=arr.sort((a,b)=>a>b?1:-1)
+
+
+// console.log(sortArr);
+// console.log(sortArr1);
+// const myName="ashwani";
+// const arrName=myName.from(myName);
+// console.log(myName);
+// console.log(arrName);

@@ -1,0 +1,106 @@
+1.Context
+Context react hook is used to send data from one component to other component 
+it does not depend on parent child realtion
+1.Create context.
+2.Provide the context with the value
+3.Consume the context
+
+2.Redux
+Redux is state mgmt library.
+1.Store
+2.Action
+3.Reducer
+Redux is the statte mgmt library
+In redux we need to create 2 folders
+1. redux
+1.action-1.actionType.js . 2-index.js
+2.reducer- 1.reducer.js. 2. main.js(combine reducers)
+3.store.js  
+so we can get teh current state by using useSelector Hook paasing (state as parameter)
+and by dispatch we can do the action on any of the button
+
+------------------------------------------------------
+Redux
+Actions-ActionTypes(Buy Sell CartItem)
+        -Index.js function buyBook (type and payload)
+
+Reducers-bookReducer.js initState=50,action(){
+                         switch(action_Type){}
+
+Store-const store= createStore(bookReducer)
+
+index.js- <Provider store={store}>App</Provider> 
+
+Consume-connect(mapStatetoProps,MapDispatchToProps)-HOC
+       -mapStateToProps-provide store data as props
+       -mapDispatchToProps-provide store dispatch as props
+
+Consume-useSelctorHok
+        -dispatch()
+
+-----------------------------------------------------------
+Context Api
+useReducer
+can be the alternative for Redux
+
+1.CreateContext-NumberContext
+
+2.Provoide Context- NumberContext.Provider pass value as props(value=data)
+
+3.Consume Context-NumberContext.consumer use value=>{value}
+
+-------------------------------------------------------------
+Routing
+1.Navbar- to="/home
+          to="/about
+2.Component
+3.<Routes> 
+    <Route path="/home" element={<Home/>}> 
+    <Route path="/about" element={<About/>}> 
+  <Routes>
+4.<Browser Router>
+    <App/>
+  <Browser Router>
+--------------------------------------------------------
+LifeCycle Methods
+1.COmponent Did Mount constructor-render-componentdidmount will call at loading of web page
+
+2.Componenet Did Update-whenever there is state change
+
+3.Component will UnMount-when we  want to remove the coponnet
+
+------------------------------------------------------------
+by useEffect
+1.useeffect- it will run first (component did mount)
+2.Dependency-it will run whenever three is state change
+3.ReturnFunction()=>{console.log}-it will remove
+
+--------------------------------------------------------
+
+react Hook
+1.useState()-used to set state of the variable
+2.useEffect()-used as lifecycle method
+3.useContext()-global state-using the data to each compo
+4.useref()-used to handle value such as color or focus, manipulate data
+5.useMemo()-unwaanted update()
+ pass callback funtion in use memo
+dependency only on update
+6.use Selector()
+act as close map state to props
+no of item in redux 
+to get the cuureent value of the item inside the store
+7.useReducer()
+
+----------------------------------------------------------
+useReducer()
+1.initialSTate=0
+
+2.const[state,dispatch)=useReducer(reducer,initialState)
+
+3.reducer(state,action){
+if(action.type==="inc){
+return (state_1)
+}
+return state}.
+
+4 use dispatch(type:"inc)

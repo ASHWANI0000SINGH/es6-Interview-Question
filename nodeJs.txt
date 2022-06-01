@@ -1,0 +1,122 @@
+nodejs
+1. What is node js
+>node js open source js runtime environment for runninin web application in server side 
+server side app
+
+this is server environemnt with the help of js
+create api- connect with data base (operation)
+connect database
+execution-internally use v8engine(v8 is js)
+Async behaviour
+
+node run on server side-connet db
+js run on browser side- no connect
+
+
+2.node js based on v8 engine(same as chrome browser)
+virtual machine js as scripting lang.
+
+3.eg web apps
+
+4 Fornt end vs backend
+front end is client side- visual aspect of web app
+back end is server side -webserver communictate with db
+
+5.Npm(Node package manger)
+online rep for nodejs 
+
+6.Module in node js
+require("http")
+
+7.http- http server
+fs-file system
+util- utility funtion
+
+8.why use node js
+>npm has 50k bundle 
+
+9.Mongo db
+>db used with node js
+its no sql (not structured)
+
+10. express js
+>express js is node js framework
+
+11.Mongoose
+>mongoose is mongo db library
+
+12. import exteranl lib'
+> var http="require("http");
+
+13. what is event loops in nodejs?
+>async callback
+
+14.Types of /API?
+>Async
+sync
+. A web service is a set of open protocols and standards
+ used for exchanging data between client-server applications.
+
+req from client and res by server
+google map api in zomato 
+
+15 http method
+1.Get
+2.Post
+3.delete
+4.put
+
+16.REST: REST stands for REpresentational State Transfer
+
+
+17.pacjage is json filr?
+conatine dependecy
+name
+version
+dependency
+desc
+meta data
+(npm init)
+
+18.Express js?
+>Express js is node js framework feature to develop
+both web and mobile apps
+
+19. simple express js app?
+1.require("express)
+2.var app=express()
+3.app.get("/"  c(allbackfun)res.send("send check")
+4. app.listen(3000)
+
+20.simple server?
+>1.reuire("http")
+2.hhtp.createServer(fun(req,res){
+res.writeHead(200,{
+content-type:"text/plan)
+res.send("send  datat check")
+)).listen(4000)
+
+21. using async and await
+
+22.callback fun
+>
+
+23.Http request
+>1.Get
+2.Post
+3.delete
+4.put
+
+
+
+23. mode js is runtime environemt for js
+it allow with  the help of node js to run on server side
+
+24. node js engine
+>v8 chrome browser(js execute)
+firefox(spidermonkey)
+edge(chakra engine)
+
+25.REPL(Read evaluate print loop)
+>node js on command line
+

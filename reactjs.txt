@@ -1,0 +1,244 @@
+raect js
+Q1.What is react js?
+>Raect js is open source js library which is used build user interface 
+and handle view layer for web
+It follows component based approach
+it used virtula Dom
+
+Q2.Features of react js
+>Virtual Dom- data object model(copy of real dom)
+Server side rendering-using 
+uni-directional data flow-parent to child
+
+Q3.Advantage of react?
+>inc app performance
+can be used clinet and server side both
+readibility is imporoved ( because  of JSX)
+easy to integarate
+
+Q4.Limitations of reaact
+>is library difficult to understand for novice
+
+Q5. jsx
+javascript xml 
+combination of js and html
+
+Q6.Virtual DOM
+>lightweight js object copy of real DOM
+data changes >entire Ui re-rendered  in virtual DOM
+the html dom created tree of objects
+each node is part of the documnet
+
+The Document Object Model (DOM) is a programming interface 
+for web documents. It represents the page 
+so that programs can change the document structure,
+ style, and content. The DOM represents 
+the document as nodes and objects; that way,
+ programming languages can interact with the page.
+
+Q7.diff real dom vs virtual dom
+slower > faster
+created a new dom when renders > updated the view page 
+manupulating dom is slow > but manipulationg virtual dom is fast
+ a new Virtual DOM tree is created.
+ 
+This new Virtual DOM tree is then compared with the previous
+ Virtual DOM tree and make a note of the changes. 
+After this, it finds the best possible ways to make these 
+changes to the real DOM. 
+
+react uses 2 dom and checks from the previos dom tree 
+the changes only is redred to the real dom
+
+Q8. Why cant browser read JSX?
+using babel as transpiler it converts JSX and 
+then transpiler inturn understand 
+
+Q9>JSX transform
+>As browser dont understand JSx transpiler like Babel
+converts JSX into regular js objects which is understood by 
+browder
+
+Q10. how errors handled in react?
+Q11. Limitation of react js
+
+Q12. feature in es10
+>optional actch binding
+object.fromEnetries()
+Array.flat - concatnate the array 
+Array.flatmap
+Dynamic import 
+global This object
+
+Q13.react vs angluar
+viw> complete MVC
+virtual Dom> Real Dom
+one way datat bindung> 2way
+compile time debugging> run time debugging
+
+----------------------------------------------
+
+Q14. components
+>components are independent block of code which makes the UI
+we can resuse the component wherecer we want
+
+Q15.render() react
+>which is visble on the screen
+
+Q16 Props
+> props are properaties passed from parent to child
+props are immutable
+
+Q17. State in react?
+> mutable 
+acees via this.state
+
+
+    constructor(props){
+      super(props);
+      this.state={
+          count:0
+      }
+  }
+  
+    incCount(){
+      this.setState({
+        count:this.state.count+1
+      })
+    }
+    decCount(){
+      this.setState({
+        count:this.state.count-1
+      })
+    }
+  render() {
+    return (
+      <div>
+        <button onClick={()=>this.incCount()}>+</button>
+        <input type="number" name="" id="" value={this.state.count} />
+        <button onClick={()=>this.decCount()}>-</button>
+
+      </div>
+
+Q18. differnce bw state and props
+>state are mutable, state is local to component
+props are not mutable, props are used to send parent to child
+
+Q19. update setState?
+const FunctionChild = () => {
+  const [count, setCount] = useState(0);
+  const incCounter = () => {
+    setCount(count + 1);
+  };
+
+  const decCounter = () => {
+    setCount(count - 1);
+  };
+  return (
+    <div>
+      <h1>function</h1>
+      <button onClick={() => incCounter()}>+</button>
+      <input type="text" value={count} />
+      <button onClick={() => decCounter()}>-</button>
+    </div>
+
+
+
+Q20. Arrow fundtion
+this.function.bind 
+()=>this.function
+Arrow function is short syntax for function
+it auto returns
+it doesnt have its own this it uses its parent this
+if there is no parent it will take the window  object this
+
+Q21. react hook
+1.useEffect
+putting empty dependency will make use effect 
+run on first render only, it wont run after that
+
+if inside dependency it will updatw acc to state update
+
+clean up will remove it using arrow function
+
+2.useState()
+
+3.useContext()
+
+4.useRef()
+used to handle value such as color or focus
+ 
+5.useMemo()
+use memeo is used to manage unwanted update
+it can impact the performance 
+
+6.useSelector()
+act as close map state to props
+no of item in redux 
+to get the cuureent value of the item inside the store
+
+Q21.1   Life cycle method?
+> 1.componentDidMount- constructire-render and after that compinnetdidmount
+componentDidUpdate-based on the state change
+componenenetdidunmount- when we wat to remove the component
+
+Q22. react hook when version 16.8
+
+Q23. what is lazy loading
+compnent to laod later than other component
+lazy,suspense we need to use supense componment inside
+the component where we want to have lazy loading
+fallback means till it renders it will show the
+defined div or etc
+
+Q24.Fragment
+Witjout adding extra node to the Dom
+
+Q25 Set State
+
+Q25.1 Lifting state up /Data from Child to parent?
+We can paas data from child tp parent by creating function
+in parent compo
+and passing data inside the parameter of the func inside 
+child compo
+
+Q26. Context api
+
+Q27 Prop Drilling
+Paassing data from 
+
+Q28 statefull vs stateless
+
+
+
+Q30 . synthetic event
+
+
+Q32 high order components
+Reusing component logic again ana d again
+cmp are passed as props are passed as compon
+
+Whereas a component transforms props into UI,
+ a higher-order component transforms a component into another component.
+(They are passes inside comoonet as props)
+
+Q33 pure compnnets
+should componnet update doesnt ask
+useMemo();
+
+
+Q34 signifince of key
+
+Q35 problem mvc
+
+Q36 explain flux
+
+Q37 what is redux
+
+q38 redux thunk
+delay dispatch of action if certain condition met
+
+Q39 react router
+
+Q40 router
+
